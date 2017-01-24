@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import CoreLocation
 
 class Location: Object {
     dynamic var latitude: Double = 0.0
@@ -17,5 +18,11 @@ class Location: Object {
         self.init()
         self.latitude = latitude
         self.longitude = longitude
+    }
+}
+
+extension Location {
+    var clLocationCoordinate2D: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 }

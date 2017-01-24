@@ -20,11 +20,91 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:27:31" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bi-22-oJE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="B24-rY-OlX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="until Santa arrives" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ax-Km-OWZ">
+                                <rect key="frame" x="0.0" y="36" width="375" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="2g7-hS-tsK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YPU-hU-CbX">
+                                <rect key="frame" x="0.0" y="60" width="375" height="438"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="438" id="vei-Gf-cOk"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Santa is waiting for Christmas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWK-Lu-Lho">
+                                <rect key="frame" x="0.0" y="462" width="375" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Z7l-Wa-8HB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="76" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kd-GG-8w5">
+                                <rect key="frame" x="0.0" y="498" width="186" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="VKX-jj-rZj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="142" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxI-2K-IBr">
+                                <rect key="frame" x="194" y="498" width="181" height="98"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="35"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CWK-Lu-Lho" firstAttribute="top" secondItem="0Ax-Km-OWZ" secondAttribute="bottom" constant="410" id="02g-N3-ywe"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ax-Km-OWZ" secondAttribute="trailing" id="0MG-Cs-Rr4"/>
+                            <constraint firstAttribute="trailing" secondItem="CWK-Lu-Lho" secondAttribute="trailing" id="4IQ-Gt-BhE"/>
+                            <constraint firstAttribute="trailing" secondItem="dxI-2K-IBr" secondAttribute="trailing" id="50q-Fl-era"/>
+                            <constraint firstItem="CWK-Lu-Lho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5hS-OP-hRl"/>
+                            <constraint firstItem="3kd-GG-8w5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Tt-LX-lNb"/>
+                            <constraint firstItem="YPU-hU-CbX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9mK-Li-dMn"/>
+                            <constraint firstItem="0Ax-Km-OWZ" firstAttribute="top" secondItem="5Bi-22-oJE" secondAttribute="bottom" constant="1" id="BbJ-a9-M2p"/>
+                            <constraint firstItem="3kd-GG-8w5" firstAttribute="width" secondItem="dxI-2K-IBr" secondAttribute="width" constant="5" id="D7b-TJ-UTV"/>
+                            <constraint firstItem="dxI-2K-IBr" firstAttribute="top" secondItem="CWK-Lu-Lho" secondAttribute="bottom" id="Frj-9K-fQX"/>
+                            <constraint firstItem="dxI-2K-IBr" firstAttribute="leading" secondItem="3kd-GG-8w5" secondAttribute="trailing" constant="8" id="Tka-n0-Srp"/>
+                            <constraint firstItem="5Bi-22-oJE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XTD-zK-5jW"/>
+                            <constraint firstItem="CWK-Lu-Lho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZfR-ge-vFV"/>
+                            <constraint firstItem="3kd-GG-8w5" firstAttribute="top" secondItem="CWK-Lu-Lho" secondAttribute="bottom" id="d1K-W8-693"/>
+                            <constraint firstAttribute="trailing" secondItem="YPU-hU-CbX" secondAttribute="trailing" id="id8-NB-aGa"/>
+                            <constraint firstAttribute="trailing" secondItem="5Bi-22-oJE" secondAttribute="trailing" id="nxU-9v-hFM"/>
+                            <constraint firstItem="3kd-GG-8w5" firstAttribute="baseline" secondItem="dxI-2K-IBr" secondAttribute="baseline" id="omH-zc-Ajm"/>
+                            <constraint firstItem="5Bi-22-oJE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vvR-WN-5ys"/>
+                            <constraint firstItem="YPU-hU-CbX" firstAttribute="top" secondItem="0Ax-Km-OWZ" secondAttribute="bottom" constant="8" id="wsc-Rr-jRr"/>
+                            <constraint firstItem="0Ax-Km-OWZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zpW-DR-Kea"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityLabel" destination="0Ax-Km-OWZ" id="27N-tk-ySx"/>
+                        <outlet property="mapView" destination="YPU-hU-CbX" id="ZgG-VX-UC0"/>
+                        <outlet property="presentsRemainingLabel" destination="CWK-Lu-Lho" id="ykm-rj-mAr"/>
+                        <outlet property="temperatureLabel" destination="3kd-GG-8w5" id="I6w-kC-LaI"/>
+                        <outlet property="timeRemainingLabel" destination="5Bi-22-oJE" id="kmb-N5-MAd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="215.19999999999999" y="213.64317841079463"/>
         </scene>
     </scenes>
 </document>
