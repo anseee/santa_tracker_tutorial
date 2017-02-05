@@ -21,6 +21,8 @@ class Santa: Object {
             _currentLocation = newValue
         }
     }
+
+    let route = List<Stop>()
     
     //  또한, Realm 이 currentLocation 속성을 저장하지 않도록 하기 위해 ignoredProperties 를 사용했습니다.
     override static func ignoredProperties() -> [String] {
