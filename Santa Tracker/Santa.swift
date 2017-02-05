@@ -23,10 +23,20 @@ class Santa: Object {
     }
 
     let route = List<Stop>()
+    private dynamic var _activity: Int = 0
+    var activity: Activity {
+        get {
+            return Activity(rawValue: _activity)!
+        }
+        set {
+            _activity = newValue.rawValue
+        }
+    }
+    
     
     //  또한, Realm 이 currentLocation 속성을 저장하지 않도록 하기 위해 ignoredProperties 를 사용했습니다.
     override static func ignoredProperties() -> [String] {
-        return ["currentLocation"]
+        return ["currentLocation", "activity"]
     }
 }
 
